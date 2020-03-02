@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="column">
+    <h1>CSS-blur</h1>
+    <div class="cssblur transform">
+      <img src="http://placekitten.com/g/500/300" />
+    </div>
+  </div>
+  
+  <div class="column">
+    <h1>SVG-blur</h1>
+    <div class="svgblur transform">
+      <img src="http://placekitten.com/g/500/300" />
+    </div>
+  </div>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="blur">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10,10"></feGaussianBlur>
+      </filter>
+    </defs>
+  </svg>
+</body>
+</html>

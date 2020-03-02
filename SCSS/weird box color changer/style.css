@@ -1,0 +1,140 @@
+
+.box-1 {
+    position: absolute;
+    top: 47.5vh;
+    left: 47.5vw;
+    background: red;
+    height: 5vh;
+    width: 5vw;
+    animation: loop-box-1 5s infinite;
+}
+.box-2 {
+    position: absolute;
+    top: 47.5vh;
+    left: 52.5vw;
+    background: blue;
+    height: 5vh;
+    width: 5vw;
+    animation: loop-box-2 5s infinite;
+}
+.box-3 {
+    position: absolute;
+    top: 52.5vh;
+    left: 47.5vw;
+    background: yellow;
+    height: 5vh;
+    width: 5vw;
+    animation: loop-box-3 5s infinite;
+}
+.box-4 {
+    position: absolute;
+    top: 52.5vh;
+    left: 52.5vw;
+    background: green;
+    height: 5vh;
+    width: 5vw;
+    animation: loop-box-4 5s infinite;
+}
+.circle {
+    height: 10vh;
+    width: 10vw;
+    border-radius: 10vmax;
+    background: red;
+    position: absolute;
+    z-index: 7;
+    top: 52vh;
+    left: 52vw;
+}
+.box-container:hover {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@keyframes loop-box-1 {
+    0% {
+        top: 47.5vh;
+        left: 47.5vw;
+    }
+    25% {
+        top: 47.5vh;
+        left: 52.5vw; 
+    }
+    50% {
+        top: 52.5vh;
+        left: 52.5vw;
+    }
+    75% {
+        top: 52.5vh;
+        left: 47.5vw;
+    }
+    100% {
+        top: 47.5vh;
+        left: 47.5vw;
+    }
+}
+@keyframes loop-box-2 {
+    0% {
+        top: 47.5vh;
+        left: 52.5vw; 
+    }
+    25% {
+        top: 52.5vh;
+        left: 52.5vw;
+    }
+    50% {
+        top: 52.5vh;
+        left: 47.5vw;
+    }
+    75% {
+        top: 47.5vh;
+        left: 47.5vw;
+    }
+    100% {
+        top: 47.5vh;
+        left: 52.5vw; 
+    }
+}
+@keyframes loop-box-3 {
+    0% {
+        top: 52.5vh;
+        left: 52.5vw;
+    }
+    25% {
+        top: 52.5vh;
+        left: 47.5vw;
+    }
+    50% {
+        top: 47.5vh;
+        left: 47.5vw;
+    }
+    75% {
+        top: 47.5vh;
+        left: 52.5vw; 
+    }
+    100% {
+        top: 52.5vh;
+        left: 52.5vw;
+    }
+}
+@keyframes loop-box-4 {
+    0% {
+        top: 52.5vh;
+        left: 47.5vw;
+    }
+    25% {
+        top: 47.5vh;
+        left: 47.5vw;
+    }
+    50% {
+        top: 47.5vh;
+        left: 52.5vw; 
+    }
+    75% {
+        top: 52.5vh;
+        left: 52.5vw;
+    }
+    100% {
+        top: 52.5vh;
+        left: 47.5vw;
+    }
+}

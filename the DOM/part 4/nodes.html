@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- html is the parent of head body and script -->
+<html>
+
+<head>
+  <title>Learning About Nodes</title>
+
+  <style>
+    * { border: 2px solid #dedede; padding: 15px; margin: 15px; }
+    html { margin: 0; padding: 0; }
+    body { max-width: 600px; font-family: sans-serif; color: #333; }
+  </style>
+</head>
+
+<!-- body is the parent of h1 h2 p and ul but not li since li is 2 levels down from body -->
+<!-- the children are one level below as opposed to the parents. the properties and gets 
+are as follows:
+
+childNodes            Child Nodes
+firstChild            First Child Node
+lastChild             Last Child Node
+children              Element Child Nodes
+firstElementChild     First Child Element Node
+lastElementChild      Last Child Element Node
+
+-->
+
+<!-- if we try and ise firstChild to modify the background of the fist element it wont be able 
+to do anything because the first element it seems is text. we use the firstElementChild property 
+to address the whole element itself -->     
+
+<!-- siblings are children that sit on the same tree level of the DOM: their properties and gets 
+are as follows:
+
+previousSibling           Previous Sibling Node
+nextSibling               Next Sibling Node
+previousElementSibling    Previous Sibling Element
+nextElementSibling        Next Sibling Element Node
+
+-->
+
+<!-- 
+  const tiger = ul.children[1];
+
+  tiger.nextElementSibling.style.background = 'coral';
+  tiger.previousElementSibling.style.background = 'aquamarine';
+
+creates a variable of the middle list item and changes its siblings next and previous to different
+colours  
+
+  
+-->
+
+<body>
+  <h1>Shark World</h1>
+  <p>The world's leading source on <strong>shark</strong> related information.</p>
+  <h2>Types of Sharks</h2>
+  <ul>
+    <li>Hammerhead</li>
+    <li>Tiger</li>
+    <li>Great White</li>
+  </ul>
+</body>
+
+<!-- 
+  for (let element of ul.children) {
+  element.style.background = 'yellow';
+}
+
+the above JS takes all the child nodes and changes their background to yellow
+-->
+
+<!-- use the parentNode property in JS to check the parrent node. chain properties together
+to check grandparent node (p.parentNode.parentNode) -->
+
+<script>
+  const h1 = document.getElementsByTagName('h1')[0]
+  const p = document.getElementsByTagName('p')[0]
+  const ul = document.getElementsByTagName('ul')[0]
+</script>
+
+<!-- 
+  document.body.children[3].lastElementChild.style.background = 'fuchsia';
+
+  log the above JS to the console. the children of a node can be addressed similarly to an 
+  array in JS but they are not an array. this takes the 4th child, takes the last element and 
+  changes its background
+
+-->
+</html>

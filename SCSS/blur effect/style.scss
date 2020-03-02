@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+.svgblur{
+  filter: url(#blur);
+}
+.cssblur{ 
+   filter: blur(10px);
+}
+.transform {
+   transform: translateZ(-200px) rotateX(40deg);
+}
+
+html, body {
+  padding: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #e56262;
+}
+img {
+  margin-bottom: 2em;
+}
+.column {
+  float: left;
+  margin-right: 4em;
+  perspective: 450; /* For compatibility with iPhone 3.0, we leave off the units here */
+  perspective-origin: 50% 225px;
+}

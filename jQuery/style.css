@@ -1,0 +1,10 @@
+.star {
+    position: fixed;
+    top: 35vh;
+    left: 35vw;
+    height: 35vh;
+    width: 35vw;
+}
+.icon {
+    height: 500vh;
+}

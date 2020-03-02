@@ -1,0 +1,23 @@
+
+
+.parrallax-container {
+    position: relative;
+    height: 0px;
+}
+
+.parallax {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+}
+
+.content {
+    background: #fff;
+    height: 400px;
+    width: 50%;
+}
+.content-container {
+    padding-top: 100%;
+}
+
